@@ -8,7 +8,7 @@ const getGoals = asyncHandler(async (req, res) => {
     const goals = await Goal.find()
 
 
-    res.status(200).json(goals)
+    res.status(200).json(goal̥s)
 })
 //@desc      Set goals
 //@route     POST /api/goals
@@ -41,7 +41,6 @@ const updateGoal = asyncHandler(async (req, res) => {
         {
             new: true
         })
-
     res.status(200).json(updatedGoal)
 })
 //@desc      Delete goals
